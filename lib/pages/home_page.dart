@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test1/utils/routes.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -16,10 +17,28 @@ class HomePage extends StatelessWidget {
           Center(child: Icon(Icons.add_a_photo_outlined))
         ],
       ),
+          // floatingActionButton: FloatingActionButton(
+          //   onPressed: () {
+          //     Navigator.pop(context , MyRoutes.loginRoute);
+          //   },
+          //  ))
         body : Center(
-          child : Text("My $day program on flutter by $name" ,
-           style: const TextStyle(fontSize: 40 , fontWeight: FontWeight.bold , color: Colors.blue),)
-        )
-      );
+          child : Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                height: 100,
+                child: Text("My $day website on flutter by $name" ,
+                 style: const TextStyle(fontSize: 40 , fontWeight: FontWeight.bold , color: Colors.blue),
+
+        ),
+              ),
+
+        ElevatedButton(onPressed: (){
+          Navigator.pop(context, MyRoutes.loginRoute);
+        }, child: const Text("Back to Login Page")
+          )],
+          ),
+      ));
   }
 }
