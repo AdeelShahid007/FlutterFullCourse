@@ -58,9 +58,9 @@ class _SignUpState extends State<SignUp> {
                     {
                       return "Username cannot be empty";
                     }
-                    else if (value.length < 5)
+                    else if (value.length > 15)
                     {
-                      return "Username should be 5";
+                      return "Username should be maximum 15";
                     }
                     return null;
                   },
@@ -80,9 +80,9 @@ class _SignUpState extends State<SignUp> {
                     {
                       return "Fullname cannot be empty";
                     }
-                    else if (value.length < 6)
+                    else if (value.length > 15)
                     {
-                      return "Fullname should be 6";
+                      return "Fullname should be maximum 15";
                     }
 
                     return null;
@@ -131,7 +131,7 @@ class _SignUpState extends State<SignUp> {
                     }
                     else if (value.length < 8)
                     {
-                      return "Password length should be 8";
+                      return "Password length should atleast be 8";
                     }
                     _pass = value;
                     return null;

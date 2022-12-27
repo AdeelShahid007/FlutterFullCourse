@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.deepOrange , fontFamily: GoogleFonts.lato().fontFamily),
       darkTheme: ThemeData(brightness: Brightness.dark),
       routes: {
-        "/": (context) => const SignUp(),
+        "/": (context) => const HomePage(),
         MyRoutes.loginRoute : (context) => const LoginPage(),
         MyRoutes.signupRoute : (context) => const SignUp(),
         MyRoutes.homeRoute : (context) => const HomePage(),

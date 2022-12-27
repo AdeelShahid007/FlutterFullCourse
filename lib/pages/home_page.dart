@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:test1/utils/routes.dart';
 
+import '../Widgets/my_drawer.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
-  final String day = "first";
+  final String day = "my";
   final String name = 'Hacker';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: const Drawer(),
+      drawer: const MyDrawer(),
       appBar: AppBar(
         title: const Center(child: Text("DDOS Hacker Provider")),
         actions: const [
@@ -28,7 +30,7 @@ class HomePage extends StatelessWidget {
             children: [
               SizedBox(
                 height: 100,
-                child: Text("My $day website on flutter by $name" ,
+                child: Text("Welcome to $day website on flutter by $name" ,
                  style: const TextStyle(fontSize: 40 , fontWeight: FontWeight.bold , color: Colors.blue),
 
         ),
