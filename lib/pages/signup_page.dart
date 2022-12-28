@@ -40,7 +40,7 @@ class _SignUpState extends State<SignUp> {
           key: _formKey,
           child: Column(
             children: [
-              Image.asset("assets/images/home_page.png", fit: BoxFit.cover, height: 300,),
+              Image.asset("assets/images/signup_page.png", fit: BoxFit.cover, height: 300,),
             const Text("Welcome to Signup Page", style: TextStyle(fontSize: 24 , fontWeight: FontWeight.bold),),
           const SizedBox(height: 40,),
           Column(
